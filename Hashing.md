@@ -113,34 +113,34 @@
 
   * ##### 개방 주소법
 
-    ```c++
+    ``` c++
     #define STR_COUNT 10000
     #define HASH_TABLE_SIZE 20033
-  #include <vector>
+    #include <vector>
     #include <string>
-  #include <iostream>
+    #include <iostream>
     
-  std::vector<std::string> strVec;
+    std::vector<std::string> strVec;
     unsigned long ToHash(const char* str)
     {
     	unsigned long hash = 5381;
-  	int c;
+    	int c;
     
-  	while (c = *str++)
+    	while (c = *str++)
     		hash = (((hash << 5) + hash) + c) % STR_COUNT;
-  
+    
     	return hash % STR_COUNT;
     }
     
-  struct HashNode
+    struct HashNode
     {
-  	int key;
+    	int key;
     	std::string str;
-  };
+    };
     
     HashNode hashTable[HASH_TABLE_SIZE];
     
-  void InitHash()
+    void InitHash()
     {
     	for (int i = 0; i < HASH_TABLE_SIZE; ++i)
     		hashTable[i].key = HASH_TABLE_SIZE;
@@ -186,9 +186,11 @@
   
     
   
+  
+  
   * ##### 개방 주소법 검증 및 사용
   
-    ```
+    ```c++
     
     int main(int argc, char* argv[])
     {
@@ -219,6 +221,8 @@
     	return 0;
     }
     ```
+  
+    
   
     
   
@@ -269,12 +273,14 @@
   
     
   
+    
+  
   * ##### 체이닝 주소법 검증 및 사용
   
     ```c++
     int main(int argc, char* argv[])
     {
-  	for (register int i = 0; i < STR_COUNT; ++i)
+    	for (register int i = 0; i < STR_COUNT; ++i)
     	{
     		int randomLength = 10 + rand() % 20;
     		std::string str;
@@ -299,5 +305,5 @@
     	return 0;
     }
     ```
-    
+  
     
