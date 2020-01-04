@@ -66,14 +66,14 @@
   ```c++
   int main(int argc,char* argv[])
   {
-  	Stack s(10);					             //10개 사이즈의 스택 선언
-  	s.Push(5);					              	//5삽입			top - 5
-  	s.Push(1);						              //1삽입			top - 1 - 5
-  	s.Push(3);					              	//3삽입			top - 3 - 1 - 5
-  	s.Push(2);						              //2삽입			top - 2 - 3 - 1 - 5
-  	s.Push(4);						              //4삽입			top - 4 - 2 - 3 - 1 - 5
-  	std::cout << s.Pop() << "\n";	//Top 반환 4		top - 2 - 3 - 1 - 5
-  	s.Push(8);					              	//8삽입			top - 8 - 2 - 3 - 1 - 5
+  	Stack s(10);                  //10개 사이즈의 스택 선언
+  	s.Push(5)                     //5삽입			top - 5
+  	s.Push(1);                    //1삽입			top - 1 - 5
+  	s.Push(3);                    //3삽입			top - 3 - 1 - 5
+  	s.Push(2);                    //2삽입			top - 2 - 3 - 1 - 5
+  	s.Push(4);                    //4삽입			top - 4 - 2 - 3 - 1 - 5
+  	std::cout << s.Pop() << "\n"; //Top 반환 4		top - 2 - 3 - 1 - 5
+  	s.Push(8)                     //8삽입			top - 8 - 2 - 3 - 1 - 5
   
   	return 0;
   }
