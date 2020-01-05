@@ -17,16 +17,16 @@
   
   int main()
   {
-  	int dataArray[10]{ 0,1,2,3,4,5,6,7,8,9 };		//선언
+  	int dataArray[10]{ 0,1,2,3,4,5,6,7,8,9 }; //선언
   
-  	std::cout << dataArray[1] << "\n";				//Index를 즉시 접근  //1
+  	std::cout << dataArray[1] << "\n";        //Index를 즉시 접근  //1
   
-  	int* cur = dataArray;							//이름을 통해 첫 배열 주소 얻음
-  	std::cout << *cur << "\n";						//0
-  	++cur;											//다음 배열칸으로 이동
-  	std::cout << *cur << "\n";						//1
-  	cur += 3;										//배열 3칸 이동
-  	std::cout << *cur << "\n";						//4
+  	int* cur = dataArray;                     //이름을 통해 첫 배열 주소 얻음
+  	std::cout << *cur << "\n";                //0
+  	++cur;                                    //다음 배열칸으로 이동
+  	std::cout << *cur << "\n"                 //1
+  	cur += 3;                                 //배열 3칸 이동
+  	std::cout << *cur << "\n";                //4
   
   	return 0;
   }
